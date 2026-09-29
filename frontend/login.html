@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | CareerConnect</title>
+
+   <!-- Authentication CSS -->
+    <link rel="stylesheet" href="./css/auth.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         LOGIN PAGE
+    ========================== -->
+
+    <main class="auth-page">
+
+        <div class="auth-container">
+
+            <!-- Left Side -->
+            <section class="auth-info">
+
+                <div class="auth-logo">
+                    <a href="./index.html">Career<span>Connect</span></a>
+                </div>
+
+                <h1>Build Your Career.<br>Connect With Opportunities.</h1>
+
+                <p>
+                    Connect with professionals, discover jobs and internships,
+                    showcase your skills, and grow your career with CareerConnect.
+                </p>
+
+                <div class="auth-benefits">
+
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <p>Find jobs and internships</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <p>Build your professional profile</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <p>Connect with professionals</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <p>Improve your career skills</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Right Side -->
+            <section class="auth-form-section">
+
+                <div class="auth-card">
+
+                    <div class="auth-header">
+
+                        <h2>Welcome Back 👋</h2>
+
+                        <p>
+                            Login to continue to your CareerConnect account.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Login Form -->
+                    <form id="loginForm">
+
+                        <!-- Email -->
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email address"
+                                autocomplete="email"
+                                required
+                            >
+
+                            <small class="error-message" id="emailError"></small>
+
+                        </div>
+
+
+                        <!-- Password -->
+                        <div class="form-group">
+
+                            <div class="password-label">
+
+                                <label for="password">
+                                    Password
+                                </label>
+
+                                <a href="#" class="forgot-password">
+                                    Forgot Password?
+                                </a>
+
+                            </div>
+
+                            <div class="password-input">
+
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    placeholder="Enter your password"
+                                    autocomplete="current-password"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    id="togglePassword"
+                                    class="toggle-password"
+                                    aria-label="Show password"
+                                >
+                                    Show
+                                </button>
+
+                            </div>
+
+                            <small class="error-message" id="passwordError"></small>
+
+                        </div>
+
+
+                        <!-- Remember Me -->
+                        <div class="remember-row">
+
+                            <label class="remember-me">
+
+                                <input
+                                    type="checkbox"
+                                    id="rememberMe"
+                                    name="rememberMe"
+                                >
+
+                                <span>Remember me</span>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- Login Button -->
+                        <button
+                            type="submit"
+                            class="auth-btn"
+                        >
+                            Login
+                        </button>
+
+
+                        <!-- Register -->
+                        <div class="auth-switch">
+
+                            <p>
+                                Don't have an account?
+                                <a href="./register.html">
+                                    Create Account
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- Login JavaScript -->
+    <script src="./js/login.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | CareerConnect</title>
+
+    <!-- Authentication CSS -->
+    <link rel="stylesheet" href="./css/auth.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         REGISTER PAGE
+    ========================== -->
+
+    <main class="auth-page">
+
+        <div class="auth-container">
+
+            <!-- =========================
+                 LEFT SIDE
+            ========================== -->
+
+            <section class="auth-info">
+
+                <div class="auth-logo">
+                    <a href="./index.html">
+                        Career<span>Connect</span>
+                    </a>
+                </div>
+
+                <h1>
+                    Start Building<br>
+                    Your Career Today.
+                </h1>
+
+                <p>
+                    Create your CareerConnect account and connect with
+                    opportunities, professionals, companies, and learning
+                    resources.
+                </p>
+
+                <div class="auth-benefits">
+
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <p>Discover jobs and internships</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <p>Showcase your skills and projects</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <p>Connect with professionals</p>
+                    </div>
+
+                    <div class="benefit-item">
+                        <span>✓</span>
+                        <p>Grow your career with smart tools</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                 RIGHT SIDE
+            ========================== -->
+
+            <section class="auth-form-section">
+
+                <div class="auth-card">
+
+                    <div class="auth-header">
+
+                        <h2>Create Account 🚀</h2>
+
+                        <p>
+                            Join CareerConnect and start your professional journey.
+                        </p>
+
+                    </div>
+
+
+                    <!-- =========================
+                         REGISTER FORM
+                    ========================== -->
+
+                    <form id="registerForm">
+
+                        <!-- Full Name -->
+
+                        <div class="form-group">
+
+                            <label for="fullName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required
+                            >
+
+                            <small
+                                class="error-message"
+                                id="fullNameError">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Email -->
+
+                        <div class="form-group">
+
+                            <label for="registerEmail">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="registerEmail"
+                                name="email"
+                                placeholder="Enter your email address"
+                                autocomplete="email"
+                                required
+                            >
+
+                            <small
+                                class="error-message"
+                                id="registerEmailError">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Account Type -->
+
+                        <div class="form-group">
+
+                            <label>
+                                I am a
+                            </label>
+
+                            <div class="role-options">
+
+                                <label class="role-option">
+
+                                    <input
+                                        type="radio"
+                                        name="role"
+                                        value="student"
+                                        checked
+                                    >
+
+                                    <span>
+                                        Student
+                                    </span>
+
+                                </label>
+
+
+                                <label class="role-option">
+
+                                    <input
+                                        type="radio"
+                                        name="role"
+                                        value="recruiter"
+                                    >
+
+                                    <span>
+                                        Recruiter
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+                            <small
+                                class="error-message"
+                                id="roleError">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Password -->
+
+                        <div class="form-group">
+
+                            <label for="registerPassword">
+                                Password
+                            </label>
+
+                            <div class="password-input">
+
+                                <input
+                                    type="password"
+                                    id="registerPassword"
+                                    name="password"
+                                    placeholder="Create a password"
+                                    autocomplete="new-password"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    id="toggleRegisterPassword"
+                                    class="toggle-password"
+                                    aria-label="Show password"
+                                >
+                                    Show
+                                </button>
+
+                            </div>
+
+                            <small
+                                class="error-message"
+                                id="registerPasswordError">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Confirm Password -->
+
+                        <div class="form-group">
+
+                            <label for="confirmPassword">
+                                Confirm Password
+                            </label>
+
+                            <div class="password-input">
+
+                                <input
+                                    type="password"
+                                    id="confirmPassword"
+                                    name="confirmPassword"
+                                    placeholder="Confirm your password"
+                                    autocomplete="new-password"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    id="toggleConfirmPassword"
+                                    class="toggle-password"
+                                    aria-label="Show password"
+                                >
+                                    Show
+                                </button>
+
+                            </div>
+
+                            <small
+                                class="error-message"
+                                id="confirmPasswordError">
+                            </small>
+
+                        </div>
+
+
+                        <!-- Terms -->
+
+                        <div class="remember-row">
+
+                            <label class="remember-me">
+
+                                <input
+                                    type="checkbox"
+                                    id="terms"
+                                    name="terms"
+                                    required
+                                >
+
+                                <span>
+                                    I agree to the
+                                    <a href="#">
+                                        Terms & Conditions
+                                    </a>
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+                        <!-- Create Account Button -->
+
+                        <button
+                            type="submit"
+                            class="auth-btn"
+                        >
+                            Create Account
+                        </button>
+
+
+                        <!-- Login Link -->
+
+                        <div class="auth-switch">
+
+                            <p>
+                                Already have an account?
+                                <a href="./login.html">
+                                    Login
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- Register JavaScript -->
+    <script src="./js/register.js"></script>
+
+</body>
+
+</html>
