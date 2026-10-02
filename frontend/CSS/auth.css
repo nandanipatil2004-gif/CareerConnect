@@ -705,3 +705,18 @@ body {
     }
 
 }
+/* Clickability Fix */
+body * {
+    pointer-events: auto !important;
+}
+
+.auth-form-section, 
+.auth-card, 
+form, 
+.form-group, 
+input, 
+select, 
+button {
+    position: relative !important;
+    z-index: 9999 !important;
+}
